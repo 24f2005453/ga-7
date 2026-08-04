@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -22,5 +22,5 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: 24f2005453@ds.study.iitm.ac.in - Scrape table sums
+      - name: 24f2005453@ds.study.iitm.ac.in
         run: node scrape.js
